@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Violet"
+    tools:context=".EditData">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="@dimen/_220sdp"
+                android:layout_height="@dimen/_130sdp"
+                app:cardCornerRadius="@dimen/_8ssp"
+                app:cardElevation="@dimen/_2ssp"
+                tools:ignore="MissingConstraints">
+                <ImageView
+                    android:id="@+id/updateimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+
+                        android:text="Kode Sepeda"
+                        android:textColor="@color/hitam"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/updatekodesepeda"
+                        android:background="@color/putih"
+                        android:textColor="@color/Violet"
+                        android:inputType="textEmailAddress"
+                        android:layout_width="@dimen/_220sdp"
+                        android:layout_height="@dimen/_35sdp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+
+                        android:text="Merk"
+                        android:textColor="@color/hitam"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <EditText
+                        android:id="@+id/updatemerk"
+                        android:background="@color/putih"
+                        android:textColor="@color/Violet"
+                        android:inputType="textEmailAddress"
+                        android:layout_width="@dimen/_220sdp"
+                        android:layout_height="@dimen/_35sdp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Jenis"
+                        android:textColor="@color/hitam"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <EditText
+                        android:id="@+id/updatejenis"
+                        android:background="@color/putih"
+                        android:textColor="@color/Violet"
+                        android:inputType="textEmailAddress"
+                        android:layout_width="@dimen/_220sdp"
+                        android:layout_height="@dimen/_35sdp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Warna"
+                        android:textColor="@color/hitam"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <EditText
+                        android:id="@+id/updatewarna"
+                        android:background="@color/putih"
+                        android:textColor="@color/Violet"
+                        android:inputType="textEmailAddress"
+                        android:layout_width="@dimen/_220sdp"
+                        android:layout_height="@dimen/_35sdp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Harga Sewa"
+                        android:textColor="@color/hitam"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <EditText
+                        android:id="@+id/updatehargasewa"
+                        android:background="@color/putih"
+                        android:textColor="@color/Violet"
+                        android:inputType="textEmailAddress"
+                        android:layout_width="@dimen/_220sdp"
+                        android:layout_height="@dimen/_35sdp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/simpan1"
+                android:text="simpan"
+                android:background="@color/ungu"
+                android:textColor="@color/putih"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
